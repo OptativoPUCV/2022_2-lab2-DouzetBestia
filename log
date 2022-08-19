@@ -36,3 +36,14 @@ Fri 19 Aug 2022 01:09:25 PM UTC:
  tests:  1|5
 total_score: 10/70
 899cc74
+Fri 19 Aug 2022 01:16:49 PM UTC: 
+ list.c | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:72:7: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   72 |   if (list->current = list->tail){
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6e217af
